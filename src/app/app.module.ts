@@ -15,6 +15,10 @@ import { PasoparamsUnoComponent } from './pasoparams-uno/pasoparams-uno.componen
 import { PasoparamsDosComponent } from './pasoparams-dos/pasoparams-dos.component';
 import { PasomasparamsUnoComponent } from './pasomasparams-uno/pasomasparams-uno.component';
 import { PasomasparamsDosComponent } from './pasomasparams-dos/pasomasparams-dos.component';
+import { PadrePadrehijoComponent } from './padre-padrehijo/padre-padrehijo.component';
+import { HijoPadrehijoComponent } from './hijo-padrehijo/hijo-padrehijo.component';
+import { PadreHijopadreComponent } from './padre-hijopadre/padre-hijopadre.component';
+import { HijoHijopadreComponent } from './hijo-hijopadre/hijo-hijopadre.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { PasomasparamsDosComponent } from './pasomasparams-dos/pasomasparams-dos
     PasoparamsUnoComponent,
     PasoparamsDosComponent,
     PasomasparamsUnoComponent,
-    PasomasparamsDosComponent
+    PasomasparamsDosComponent,
+    PadrePadrehijoComponent,
+    HijoPadrehijoComponent,
+    PadreHijopadreComponent,
+    HijoHijopadreComponent
   ],
   imports: [
     BrowserModule,

@@ -10,6 +10,8 @@ import { PasomasparamsDosComponent } from './pasomasparams-dos/pasomasparams-dos
 import { PasoparamsUnoComponent } from './pasoparams-uno/pasoparams-uno.component';
 import { PasomasparamsUnoComponent } from './pasomasparams-uno/pasomasparams-uno.component';
 import { DirectivasComponent } from './directivas/directivas.component';
+import { PadrePadrehijoComponent } from './padre-padrehijo/padre-padrehijo.component';
+import { PadreHijopadreComponent } from './padre-hijopadre/padre-hijopadre.component';
 
 const routes: Routes = [
   { path: 'inter', component: InterpolacionComponent },
@@ -22,6 +24,8 @@ const routes: Routes = [
   { path: 'pasoparamuno', component: PasoparamsUnoComponent },
   { path: 'pasomasparamsuno', component: PasomasparamsUnoComponent },
   { path: 'pasomasparamsdos', component: PasomasparamsDosComponent },
+  { path: 'padre-padrehijo', component: PadrePadrehijoComponent },
+  { path: 'padre-hijopadre', component: PadreHijopadreComponent },
   { path: '', pathMatch: 'full', redirectTo: 'inter' }
 ];
 
