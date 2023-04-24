@@ -1,0 +1,6 @@
+<h3>Paso de parámetros 2 Pt 1</h3>
+<input [(ngModel)]="id">
+<br>
+<label for="editable"><small>No permitir modificarlo</small></label><input type="checkbox" [(ngModel)]="editable">
+<br><br>
+<button [routerLink]="['/pasomasparamsdos']" [queryParams]="{id,editable}" routerLinkActive="router-link-active" >Enviar ID y si es editable en Pt 2</button>

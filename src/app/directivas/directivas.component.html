@@ -1,0 +1,17 @@
+<h3>Directivas</h3>
+<select [(ngModel)]="opcionSeleccionada">
+  <option *ngFor="let index of opciones" [value]="index">{{index}}</option>
+</select>
+<br>
+<div [ngSwitch]="opcionSeleccionada">
+  <div *ngSwitchCase="'Hola'" [ngTemplateOutlet]="hola"></div>
+  <div *ngSwitchCase="'Mundo'" [ngTemplateOutlet]="mundo"></div>
+</div>
+<div *ngIf="booleanIf; then verdad else falso"></div>
+<br>
+<button (click)="cambiarIf()">Cambio en If</button>
+
+<ng-template #hola>Muestro porque se ha seleccionado hola 👋</ng-template>
+<ng-template #mundo>Muestro porque se ha seleccionado mundo 🌍</ng-template>
+<ng-template #verdad>Muestro porque es verdero ✅</ng-template>
+<ng-template #falso>Muestro porque es falso ❌</ng-template>
